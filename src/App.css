@@ -1,0 +1,282 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 4px;
+  margin-bottom: 0px;
+  margin-top: 16px;
+}
+
+.down-arrow {
+  position: absolute;
+  top: calc(100vh - 10vh);
+  left: calc(50%);
+  width: 0;
+  height: 0px;
+  border: 0px solid;
+  border-radius: 2px;
+  animation: jumpInfinite 1.5s infinite;
+}
+
+.down-arrow:after {
+  content: " ";
+  position: absolute;
+  top: 12px;
+  left: -10px;
+  width: 12px;
+  height: 12px;
+  border-bottom: 3px solid;
+  border-right: 3px solid;
+  border-radius: 2px;
+  transform: rotateZ(45deg);
+}
+
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 10px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+.aboutme {
+  background-image: linear-gradient(to top, #0f1727, #0f1727, #050409);
+}
+/* #1f2f51 */
+
+.uk-card-large {
+  background-color: #111a2c;
+  border-radius: 8px;
+  transition: .3s;
+  padding: 4px;
+}
+
+.uk-card-large:hover {
+  background-color: #17233b;
+  color: #de1b85;
+  border-radius: 8px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.uk-card-large:hover .uk-card-title {
+  color: #de1b85;
+  transition: .2s;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.uk-card-large .uk-card-title {
+  transition: .2s;
+}
+
+.uk-card-large:hover .hover-text {
+  transition: .2s;
+  bottom: 32px;
+  opacity: 1;
+}
+
+.uk-card-body {
+  background-color: #111a2ca9;
+  border-radius: 8px;
+  transition: .2s;
+}
+
+.uk-card-large:hover .uk-card-body {
+  background-color: #111a2cd9;
+  transition: .2s;
+}
+
+.hover-text {
+  transition: .2s;
+  bottom: 0px;
+  opacity: 0;
+}
+
+.uk-modal-body {
+  background-color: #20293a;
+}
+
+.your-element.scrolled {
+  background-color: #20293ad0; /* Change to the color you want when scrolled */
+  backdrop-filter: blur(5px);
+}
+
+.your-element {
+  transition-duration: .2s;
+  background-color: #00000000; /* Change to the color you want when scrolled */
+  /* Add any additional styles for the scrolled state */
+}
+
+.contactInput {
+  background-color: #0e1420;
+  width: 100%;
+  height: 38px;
+  border: 0px;
+  font-size: 16px;
+  border-radius: 5px;
+  color: white;
+  padding: 2px;
+  padding-left: 8px;
+  margin: 16px;
+}
+
+input {
+  display: block;
+  margin: 8px;
+}
+
+.contactInput2 {
+  background-color: #0e1420;
+  width: 100%;
+  height: 200px;
+  border-color: #00000000;
+  font-size: 16px;
+  border-radius: 5px;
+  min-height: 200px;
+  max-height: 1000px;
+  color: white;
+  padding: 2px;
+  padding-left: 8px;
+  padding-top: 8px;
+  margin: 16px;
+  margin-top: 0px;
+}
+
+.submitForm {
+  font-size: 16px;
+  border-radius: 8px;
+  border-color:rgba(255, 255, 255, 0.637);
+  border-width: 2px;
+  background-color: #00000000;
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 48px;
+  padding-right: 48px;
+  transition: .25s;
+  margin: 4px;
+  transition: .3s;
+  margin-bottom: 8px;
+}
+
+.submitForm:hover {
+    font-size: 16px;
+    box-shadow: none;
+  transition: .3s;
+  border-color:#de1b85;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 54px;
+  padding-right: 54px;
+  background-color: #de1b85;
+  margin: 0px;
+  margin-bottom: 4px;
+}
+
+.socialButton {
+  border: 2px solid rgba(255, 255, 255, 0.637);
+  border-radius: 8px;
+  position: relative;
+  display: inline-block;
+  margin: 8px;
+  transition: .2s;
+}
+
+.socialButton:hover {
+  margin: 0px;
+  cursor: pointer;
+  box-shadow: 3px 3px 20px #00000023;
+  transition: .2s;
+}
+
+.buttonInner {
+  transition: .2s;
+  margin: 16px;
+  width: 150px
+}
+
+.socialButton:hover .buttonInner {
+  transition: .2s;
+  margin: 20px;
+  width: 158px
+}
+
+.one:hover {
+  background-color: rgb(255, 70, 70);
+  border: 2px solid rgb(255, 70, 70);
+}
+.two:hover {
+  background-color: rgb(96, 60, 255);
+  border: 2px solid rgb(96, 60, 255);
+}
+.three:hover {
+  background-color: rgb(255, 126, 40);
+  border: 2px solid rgb(255, 126, 40);
+}
+.four:hover {
+  background-color: rgb(255, 70, 70);
+  border: 2px solid rgb(255, 70, 70);
+}
+.five:hover {
+  background-color: rgb(55, 228, 49);
+  border: 2px solid rgb(55, 228, 49);
+}
+.six:hover {
+  background-color: rgb(255, 52, 154);
+  border: 2px solid rgb(255, 52, 154);
+}
+.seven:hover {
+  background-color: rgb(255,85,0);
+  border: 2px solid rgb(255,85,0);
+}
+.eight:hover {
+  background-color: #e9e5cd;
+  border: 2px solid #e9e5cd;
+}
