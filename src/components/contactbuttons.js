@@ -66,7 +66,7 @@ export const ContactButtons = () => {
     };
 
   return (
-    <div style={{paddingBottom: 32}}>
+    <div style={{paddingBottom: 32}} uk-scrollspy="cls: uk-animation-slide-bottom; target: .socialButton; delay: 100; repeat: false">
         <div class="socialButton one" onClick={handleOpenEmail}>
             <div class="buttonInner">
                 <img src={emailIcon} style={{height:32, filter: "brightness(0) invert(1)"}}/>

@@ -8,6 +8,9 @@ import maze from "./../assets/mazebackground.png";
 import sudoku from "./../assets/sudokubackground.png";
 import markov from "./../assets/markov.png";
 import tda from "./../assets/tda.png";
+import DevelopmentOrDisplacement from './developmentordisplacement';
+import SongPong from './songpong';
+import Snax from './snax';
 
 const MyWork = () => {
     const isSmallScreen = useMediaQuery({ maxWidth: 600 });
@@ -17,7 +20,7 @@ const MyWork = () => {
             <div class="uk-child-width-1-3@m" data-uk-grid uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card-large; delay: 200; repeat: false">
             <div>
                     <div class="uk-card-large" data-uk-toggle="target: #modal-tda" style={{backgroundImage: `url(${tda})`, borderRadius: 9, backgroundSize: "cover", padding: 0}}>
-                        <div class="uk-card-secondary uk-card-body" style={{textAlign: "left", paddingLeft: 32, paddingTop: 32, height: 300, backdropFilter: "blur(2px) brightness(100%)"}}>
+                        <div class="uk-card-secondary uk-card-body" style={{textAlign: "left", paddingLeft: 32, paddingTop: 32, height: 200, backdropFilter: "blur(2px) brightness(100%)"}}>
                             <h3 class="uk-card-title">The Shape of United States Segregation</h3>
                             
                             <div class="uk-grid" style={{justifyContent: "space-between", height: 250}}>
@@ -35,7 +38,6 @@ const MyWork = () => {
                                 <h4 style={{marginTop: 0, marginBottom: 8, color: "gray"}}>March 2023 - Present</h4>
                                 <span class="uk-label" style={{backgroundColor: "PaleTurquoise", color: "#050409", marginRight: 8, fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>Python</span>
                                 <span class="uk-label" style={{backgroundColor: "PaleTurquoise", color: "#050409", marginRight: 8, fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>ArcGIS</span>
-                                <span class="uk-label" style={{backgroundColor: "PaleTurquoise", color: "#050409", marginRight: 8, fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>scikit-tda</span>
                                 <span class="uk-label" style={{backgroundColor: "PaleGreen", color: "#050409", marginRight: 8, fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>Topological Data Analysis</span>
                                 <span class="uk-label" style={{backgroundColor: "PaleGreen", color: "#050409", marginRight: 8, fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>Computational Mathematics</span>
                                 <span class="uk-label" style={{backgroundColor: "PaleGreen", color: "#050409", marginRight: 8, fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>Math Research</span>
@@ -45,7 +47,7 @@ const MyWork = () => {
                 </div>
                 <div>
                     <div class="uk-card-large" data-uk-toggle="target: #modal-development" style={{backgroundImage: `url(${dataviz})`, borderRadius: 9, backgroundSize: "cover", padding: 0}}>
-                        <div class="uk-card-secondary uk-card-body" style={{textAlign: "left", paddingLeft: 32, paddingTop: 32, height: 300, backdropFilter: "blur(2px) brightness(100%)"}}>
+                        <div class="uk-card-secondary uk-card-body" style={{textAlign: "left", paddingLeft: 32, paddingTop: 32, height: 200, backdropFilter: "blur(2px) brightness(100%)"}}>
                             <h3 class="uk-card-title">Development or Displacement?</h3>
                             
                             <div class="uk-grid" style={{justifyContent: "space-between", height: 250}}>
@@ -67,13 +69,13 @@ const MyWork = () => {
                                 <span class="uk-label" style={{backgroundColor: "PaleTurquoise", color: "#050409", marginRight: 8, fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>Python</span>
                                 <span class="uk-label" style={{backgroundColor: "PaleGreen", color: "#050409", marginRight: 8, fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>Data Visualization</span>
                                 <span class="uk-label" style={{backgroundColor: "PaleGreen", color: "#050409", marginRight: 8, fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>Data Cleaning</span>
-                                <p style={{color: "lightgray"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <DevelopmentOrDisplacement/>
                             </div>
                     </div>
                 </div>
                 <div>
                     <div class="uk-card-large" data-uk-toggle="target: #modal-markov" style={{backgroundImage: `url(${markov})`, borderRadius: 9, backgroundSize: "cover", padding: 0}}>
-                        <div class="uk-card-secondary uk-card-body" style={{textAlign: "left", paddingLeft: 32, paddingTop: 32, height: 300, backdropFilter: "blur(2px) brightness(100%)"}}>
+                        <div class="uk-card-secondary uk-card-body" style={{textAlign: "left", paddingLeft: 32, paddingTop: 32, height: 200, backdropFilter: "blur(2px) brightness(100%)"}}>
                             <h3 class="uk-card-title">Predicting Future Minnesota Inter-Regional Migration</h3>
                             
                             <div class="uk-grid" style={{justifyContent: "space-between", height: 250}}>
@@ -94,13 +96,13 @@ const MyWork = () => {
                                 <span class="uk-label" style={{backgroundColor: "PaleTurquoise", color: "#050409", marginRight: 8, fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>ArcGIS</span>
                                 <span class="uk-label" style={{backgroundColor: "PaleGreen", color: "#050409", marginRight: 8, fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>Markov Chains</span>
                                 <span class="uk-label" style={{backgroundColor: "PaleGreen", color: "#050409", marginRight: 8, fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>Network Science</span>
-                                <p style={{color: "lightgray"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p style={{color: "lightgray"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>>
                             </div>
                     </div>
                 </div>
                 <div>
                     <div class="uk-card-large" data-uk-toggle="target: #modal-snax" style={{backgroundImage: `url(${snax})`, borderRadius: 9, backgroundSize: "cover", padding: 0}}>
-                        <div class="uk-card-secondary uk-card-body" style={{textAlign: "left", paddingLeft: 32, paddingTop: 32, height: 300, backdropFilter: "blur(1px) brightness(80%)"}}>
+                        <div class="uk-card-secondary uk-card-body" style={{textAlign: "left", paddingLeft: 32, paddingTop: 32, height: 200, backdropFilter: "blur(1px) brightness(80%)"}}>
                             <h3 class="uk-card-title">SNAX</h3>
                             <div class="uk-card-badge uk-label" style={{backgroundColor: "#AFEEEEc0", color: "#050409d0", fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1, paddingLeft: 8, marginTop: -16, marginRight: -16}}>Comp Sci</div>
                             <div class="uk-grid" style={{justifyContent: "space-between", height: 250}}>
@@ -120,13 +122,13 @@ const MyWork = () => {
                                 <span class="uk-label" style={{backgroundColor: "PaleGreen", color: "#050409", marginRight: 8, fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>Sketch</span>
                                 <span class="uk-label" style={{backgroundColor: "PaleGreen", color: "#050409", marginRight: 8, fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>App Development</span>
                                 <span class="uk-label" style={{backgroundColor: "PaleGreen", color: "#050409", marginRight: 8, fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>UI/UX</span>
-                                <p style={{color: "lightgray"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <Snax/>
                             </div>
                     </div>
                 </div>
                 <div>
                     <div class="uk-card-large" data-uk-toggle="target: #modal-songpong" style={{backgroundImage: `url(${songpong})`, borderRadius: 9, backgroundSize: "cover", padding: 0}}>
-                        <div class="uk-card-secondary uk-card-body" style={{textAlign: "left", paddingLeft: 32, paddingTop: 32, height: 300, backdropFilter: "blur(2px) brightness(100%)"}}>
+                        <div class="uk-card-secondary uk-card-body" style={{textAlign: "left", paddingLeft: 32, paddingTop: 32, height: 200, backdropFilter: "blur(2px) brightness(100%)"}}>
                             <h3 class="uk-card-title">Song Pong</h3>
                             <div class="uk-card-badge uk-label" style={{backgroundColor: "#AFEEEEc0", color: "#050409d0", fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1, paddingLeft: 8, marginTop: -16, marginRight: -16}}>Comp Sci</div>
                             <div class="uk-grid" style={{justifyContent: "space-between", height: 250}}>
@@ -145,13 +147,13 @@ const MyWork = () => {
                                 <span class="uk-label" style={{backgroundColor: "PaleTurquoise", color: "#050409", marginRight: 8, fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>C#</span>
                                 <span class="uk-label" style={{backgroundColor: "PaleGreen", color: "#050409", marginRight: 8, fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>Game Development</span>
                                 <span class="uk-label" style={{backgroundColor: "PaleGreen", color: "#050409", marginRight: 8, fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>Project Management</span>
-                                <p style={{color: "lightgray"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <SongPong/>
                             </div>
                     </div>
                 </div>
                 <div>
                     <div class="uk-card-large" data-uk-toggle="target: #modal-battleship" style={{backgroundImage: `url(${battleship})`, borderRadius: 9, backgroundSize: "cover", padding: 0}}>
-                        <div class="uk-card-secondary uk-card-body" style={{textAlign: "left", paddingLeft: 32, paddingTop: 32, height: 300, backdropFilter: "blur(1px) brightness(100%)"}}>
+                        <div class="uk-card-secondary uk-card-body" style={{textAlign: "left", paddingLeft: 32, paddingTop: 32, height: 200, backdropFilter: "blur(1px) brightness(100%)"}}>
                             <h3 class="uk-card-title">Battleship Better</h3>
                             <div class="uk-card-badge uk-label" style={{backgroundColor: "#AFEEEEc0", color: "#050409d0", fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1, paddingLeft: 8, marginTop: -16, marginRight: -16}}>Comp Sci</div>
                             <div class="uk-grid" style={{justifyContent: "space-between", height: 250}}>
@@ -177,7 +179,7 @@ const MyWork = () => {
                 </div>
                 <div>
                     <div class="uk-card-large" data-uk-toggle="target: #modal-maze" style={{backgroundImage: `url(${maze})`, borderRadius: 9, backgroundSize: "cover", padding: 0}}>
-                        <div class="uk-card-secondary uk-card-body" style={{textAlign: "left", paddingLeft: 32, paddingTop: 32, height: 300, backdropFilter: "blur(1px) brightness(100%)"}}>
+                        <div class="uk-card-secondary uk-card-body" style={{textAlign: "left", paddingLeft: 32, paddingTop: 32, height: 200, backdropFilter: "blur(1px) brightness(100%)"}}>
                             <h3 class="uk-card-title">Marvelous Maze Maker</h3>
                             <div class="uk-card-badge uk-label" style={{backgroundColor: "#AFEEEEc0", color: "#050409d0", fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1, paddingLeft: 8, marginTop: -16, marginRight: -16}}>Comp Sci</div>
                             <div class="uk-grid" style={{justifyContent: "space-between", height: 250}}>
@@ -201,7 +203,7 @@ const MyWork = () => {
                 </div>
                 <div>
                     <div class="uk-card-large" data-uk-toggle="target: #modal-sudoku" style={{backgroundImage: `url(${sudoku})`, borderRadius: 9, backgroundSize: "cover", padding: 0}}>
-                        <div class="uk-card-secondary uk-card-body" style={{textAlign: "left", paddingLeft: 32, paddingTop: 32, height: 300, backdropFilter: "blur(2px) brightness(100%)"}}>
+                        <div class="uk-card-secondary uk-card-body" style={{textAlign: "left", paddingLeft: 32, paddingTop: 32, height: 200, backdropFilter: "blur(2px) brightness(100%)"}}>
                             <h3 class="uk-card-title">Supreme Sudoku Solver</h3>
                             <div class="uk-card-badge uk-label" style={{backgroundColor: "#AFEEEEc0", color: "#050409d0", fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1, paddingLeft: 8, marginTop: -16, marginRight: -16}}>Comp Sci</div>
                             <div class="uk-grid" style={{justifyContent: "space-between", height: 250}}>

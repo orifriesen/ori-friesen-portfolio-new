@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ori-friesen-portfolio-new/static/css/main.065f5067.css",
-    "main.js": "/ori-friesen-portfolio-new/static/js/main.646dcbec.js",
+    "main.css": "/ori-friesen-portfolio-new/static/css/main.07453c0f.css",
+    "main.js": "/ori-friesen-portfolio-new/static/js/main.2d3d5c1c.js",
     "static/js/787.f8e50a0b.chunk.js": "/ori-friesen-portfolio-new/static/js/787.f8e50a0b.chunk.js",
     "static/media/26.jpg": "/ori-friesen-portfolio-new/static/media/26.53a5b9c6dec68b96c5aa.jpg",
     "static/media/21.jpg": "/ori-friesen-portfolio-new/static/media/21.60300f1b179759ac020c.jpg",
@@ -14,8 +14,10 @@
     "static/media/greenline.jpg": "/ori-friesen-portfolio-new/static/media/greenline.341ec37741487af0875d.jpg",
     "static/media/11.jpg": "/ori-friesen-portfolio-new/static/media/11.6660b565fd9269972646.jpg",
     "static/media/10.jpg": "/ori-friesen-portfolio-new/static/media/10.c6e98ee2fd75733b886b.jpg",
+    "static/media/developmentMap.gif": "/ori-friesen-portfolio-new/static/media/developmentMap.53ba825d989719b65522.gif",
     "static/media/9.jpg": "/ori-friesen-portfolio-new/static/media/9.20d4cf1850e40edc842a.jpg",
     "static/media/3.jpg": "/ori-friesen-portfolio-new/static/media/3.98287ffd884f3af64435.jpg",
+    "static/media/developmentChart.gif": "/ori-friesen-portfolio-new/static/media/developmentChart.09e9f38f600729f4b310.gif",
     "static/media/markov.png": "/ori-friesen-portfolio-new/static/media/markov.bf054dc46c712b9e8d86.png",
     "static/media/tda.png": "/ori-friesen-portfolio-new/static/media/tda.5a39de60bcbfd4a0f486.png",
     "static/media/2.jpg": "/ori-friesen-portfolio-new/static/media/2.d2ba22e725ed29025eb2.jpg",
@@ -42,16 +44,17 @@
     "static/media/goodreads.png": "/ori-friesen-portfolio-new/static/media/goodreads.24b2e45aa0bd529d3caa.png",
     "static/media/instagram.png": "/ori-friesen-portfolio-new/static/media/instagram.8ee0813b813787988394.png",
     "static/media/spotify.png": "/ori-friesen-portfolio-new/static/media/spotify.2525f20974b83abf867d.png",
+    "static/media/snax1.png": "/ori-friesen-portfolio-new/static/media/snax1.e691a51692dd9852efed.png",
     "static/media/github.png": "/ori-friesen-portfolio-new/static/media/github.d657792019231356cc76.png",
     "static/media/email.png": "/ori-friesen-portfolio-new/static/media/email.f6d95a71bc7091371425.png",
     "static/media/logo.svg": "/ori-friesen-portfolio-new/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/ori-friesen-portfolio-new/index.html",
-    "main.065f5067.css.map": "/ori-friesen-portfolio-new/static/css/main.065f5067.css.map",
-    "main.646dcbec.js.map": "/ori-friesen-portfolio-new/static/js/main.646dcbec.js.map",
+    "main.07453c0f.css.map": "/ori-friesen-portfolio-new/static/css/main.07453c0f.css.map",
+    "main.2d3d5c1c.js.map": "/ori-friesen-portfolio-new/static/js/main.2d3d5c1c.js.map",
     "787.f8e50a0b.chunk.js.map": "/ori-friesen-portfolio-new/static/js/787.f8e50a0b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.065f5067.css",
-    "static/js/main.646dcbec.js"
+    "static/css/main.07453c0f.css",
+    "static/js/main.2d3d5c1c.js"
   ]
 }

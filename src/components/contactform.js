@@ -36,11 +36,11 @@ export const ContactUs = () => {
   return (
     <div class="uk-flex-center" align="center">
         <form ref={form} onSubmit={sendEmail} style={{width: "100vw", marginBottom: 32}}>
-            <input type="text" name="from_name" placeholder="Your Name" class="contactInput" style={{width: isSmallScreen ? "70vw" : "50vw"}}/>
-            <input type="email" name="userEmail" placeholder="Your Email" class="contactInput" style={{width: isSmallScreen ? "70vw" : "50vw"}}/>
-            <textarea name="message" placeholder="Your Message" class="contactInput2" style={{width: isSmallScreen ? "70vw" : "50vw"}}/>
+            <input type="text" name="from_name" placeholder="Your Name" class="contactInput" style={{width: isSmallScreen ? "70vw" : "50vw"}} uk-scrollspy="cls: uk-animation-slide-right; repeat: false"/>
+            <input type="email" name="userEmail" placeholder="Your Email" class="contactInput" style={{width: isSmallScreen ? "70vw" : "50vw"}} uk-scrollspy="cls: uk-animation-slide-right; repeat: false"/>
+            <textarea name="message" placeholder="Your Message" class="contactInput2" style={{width: isSmallScreen ? "70vw" : "50vw"}} uk-scrollspy="cls: uk-animation-slide-right; repeat: false"/>
             <br/>
-            <button type="submit" value="Send" class="submitForm"><div style={{marginLeft: 8, display: "inline-block"}} onClick={showNotification}>Send</div> <span uk-icon="arrow-right"></span></button>
+            <button type="submit" value="Send" class="submitForm" uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false"><div style={{marginLeft: 8, display: "inline-block"}} onClick={showNotification}>Send</div> <span uk-icon="arrow-right"></span></button>
         </form>
         <ToastContainer />
     </div>

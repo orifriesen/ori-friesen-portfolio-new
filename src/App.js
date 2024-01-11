@@ -164,7 +164,7 @@ function App() {
           <div class="uk-flex uk-section-secondary uk-text-center" style={{display:"inline-block", backgroundImage: "linear-gradient(180deg, #0f1727, #05040D , #05040D , #05040D , #05040D , #0f1727)", width: "100vw", borderRadius: 48}}>
             <h1 class="uk-text-center" style={{textAlign: "center", marginTop: 128}} uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false">My Projects</h1>
             <div uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false" style={{fontSize: isSmallScreen ? "14px" : "16px", marginTop:"8px", marginBottom: "32px", width: "60vw", display: "inline-block"}} class="uk-text-center">
-                Below are some of the projects that I have worked on from high school through college.
+                Below is a list of projects that I have worked on since high school. Some of the following projects were done for courses and some were done independently. As I am on the constant pursuit of creating new things, what you see here now might not be the same tomorrow!
             </div>
             <MyWork/>
           </div>
@@ -194,9 +194,9 @@ function App() {
 
         <div class="uk-flex uk-flex-center uk-section-secondary uk-text-center" style={{display:"inline-block", backgroundImage: "linear-gradient(180deg, #0f1727, #05040D , #05040D , #05040D)", width: "100vw"}}>
           <h1 class="uk-text-center" name="contactme" style={{textAlign: "center", marginTop: 120}} uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false">Contact Me</h1>
-          <div style={{fontSize: isSmallScreen ? "14px" : "18px", marginTop:"8px", marginBottom: "32px", width: "60vw", display: "inline-block", marginTop: 16}}>Want to know more about what I am up to? Find me at any of the following places</div>
+          <div style={{fontSize: isSmallScreen ? "14px" : "18px", marginTop:"8px", marginBottom: "32px", width: "60vw", display: "inline-block", marginTop: 16}} uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false">Want to know more about what I am up to? Find me at any of the following places</div>
           <ContactButtons/>
-          <div style={{fontSize: isSmallScreen ? "14px" : "18px", marginTop:"8px", marginBottom: "16px", width: "60vw", display: "inline-block", marginTop: 0}}>or send me a message below!</div>
+          <div style={{fontSize: isSmallScreen ? "14px" : "18px", marginTop:"8px", marginBottom: "16px", width: "60vw", display: "inline-block", marginTop: 0}} uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false">or send me a message below!</div>
           <ContactUs/>
         </div>
       </div>
