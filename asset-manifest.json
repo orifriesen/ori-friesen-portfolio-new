@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ori-friesen-portfolio-new/static/css/main.07453c0f.css",
-    "main.js": "/ori-friesen-portfolio-new/static/js/main.1fc82bda.js",
+    "main.js": "/ori-friesen-portfolio-new/static/js/main.5051657b.js",
     "static/js/787.f8e50a0b.chunk.js": "/ori-friesen-portfolio-new/static/js/787.f8e50a0b.chunk.js",
     "static/media/26.jpg": "/ori-friesen-portfolio-new/static/media/26.53a5b9c6dec68b96c5aa.jpg",
     "static/media/21.jpg": "/ori-friesen-portfolio-new/static/media/21.60300f1b179759ac020c.jpg",
@@ -49,11 +49,11 @@
     "static/media/logo.svg": "/ori-friesen-portfolio-new/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/ori-friesen-portfolio-new/index.html",
     "main.07453c0f.css.map": "/ori-friesen-portfolio-new/static/css/main.07453c0f.css.map",
-    "main.1fc82bda.js.map": "/ori-friesen-portfolio-new/static/js/main.1fc82bda.js.map",
+    "main.5051657b.js.map": "/ori-friesen-portfolio-new/static/js/main.5051657b.js.map",
     "787.f8e50a0b.chunk.js.map": "/ori-friesen-portfolio-new/static/js/787.f8e50a0b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.07453c0f.css",
-    "static/js/main.1fc82bda.js"
+    "static/js/main.5051657b.js"
   ]
 }
