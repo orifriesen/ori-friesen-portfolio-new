@@ -11,6 +11,11 @@ import tda from "./../assets/tda.png";
 import DevelopmentOrDisplacement from './developmentordisplacement';
 import SongPong from './songpong';
 import Snax from './snax';
+import SudokuSolver from './sudokusolver';
+import MazeGenerator from './mazegenerator';
+import Battleship from './battleship';
+import GraphTheory from './graphtheory';
+import Topology from './topology';
 
 const MyWork = () => {
     const isSmallScreen = useMediaQuery({ maxWidth: 600 });
@@ -41,7 +46,7 @@ const MyWork = () => {
                                 <span class="uk-label" style={{backgroundColor: "PaleGreen", color: "#050409", marginRight: 8, fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>Topological Data Analysis</span>
                                 <span class="uk-label" style={{backgroundColor: "PaleGreen", color: "#050409", marginRight: 8, fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>Computational Mathematics</span>
                                 <span class="uk-label" style={{backgroundColor: "PaleGreen", color: "#050409", marginRight: 8, fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>Math Research</span>
-                                <p style={{color: "lightgray"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <Topology/>
                             </div>
                     </div>
                 </div>
@@ -96,7 +101,7 @@ const MyWork = () => {
                                 <span class="uk-label" style={{backgroundColor: "PaleTurquoise", color: "#050409", marginRight: 8, fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>ArcGIS</span>
                                 <span class="uk-label" style={{backgroundColor: "PaleGreen", color: "#050409", marginRight: 8, fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>Markov Chains</span>
                                 <span class="uk-label" style={{backgroundColor: "PaleGreen", color: "#050409", marginRight: 8, fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>Network Science</span>
-                                <p style={{color: "lightgray"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>>
+                                <GraphTheory/>
                             </div>
                     </div>
                 </div>
@@ -173,7 +178,7 @@ const MyWork = () => {
                                 <span class="uk-label" style={{backgroundColor: "PaleTurquoise", color: "#050409", marginRight: 8, fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>JavaScript</span>
                                 <span class="uk-label" style={{backgroundColor: "PaleGreen", color: "#050409", marginRight: 8, fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>Algorithm Design</span>
                                 <span class="uk-label" style={{backgroundColor: "PaleGreen", color: "#050409", marginRight: 8, fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>UI/UX</span>
-                                <p style={{color: "lightgray"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <Battleship/>
                             </div>
                     </div>
                 </div>
@@ -197,7 +202,7 @@ const MyWork = () => {
                                 <span class="uk-label" style={{backgroundColor: "PaleTurquoise", color: "#050409", marginRight: 8, fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>C++</span>
                                 <span class="uk-label" style={{backgroundColor: "PaleTurquoise", color: "#050409", marginRight: 8, fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>SFML</span>
                                 <span class="uk-label" style={{backgroundColor: "PaleGreen", color: "#050409", marginRight: 8, fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>Algorithm Design</span>
-                                <p style={{color: "lightgray"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <MazeGenerator/>
                             </div>
                     </div>
                 </div>
@@ -221,7 +226,7 @@ const MyWork = () => {
                                 <span class="uk-label" style={{backgroundColor: "PaleTurquoise", color: "#050409", marginRight: 8, fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>C++</span>
                                 <span class="uk-label" style={{backgroundColor: "PaleTurquoise", color: "#050409", marginRight: 8, fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>SFML</span>
                                 <span class="uk-label" style={{backgroundColor: "PaleGreen", color: "#050409", marginRight: 8, fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>Algorithm Design</span>
-                                <p style={{color: "lightgray"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <SudokuSolver/>
                             </div>
                     </div>
                 </div>
