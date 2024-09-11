@@ -155,7 +155,6 @@ function App() {
           <h3 style={{marginTop: 64}} class="uk-text-center">Want to know more about me?</h3>
 
             <div class="uk-flex uk-flex-center" style={{width: "100%", marginTop: 16, marginBottom: 32}}>
-              <a class="uk-button uk-button-default" onClick={onButtonClickResume} style={{fontSize: isSmallScreen ? "10px" : "16px", marginRight: 16}} uk-scrollspy="cls: uk-animation-slide-left; repeat: false"><span uk-icon="download" style={{margin: 4}}></span> Download my resume!</a>
               <a class="uk-button uk-button-default" onClick={onButtonClickCV} style={{fontSize: isSmallScreen ? "10px" : "16px", marginLeft: 16}} uk-scrollspy="cls: uk-animation-slide-right; repeat: false"><span uk-icon="download" style={{margin: 4}}></span> Download my CV!</a>
             </div>
           </div>
@@ -172,9 +171,9 @@ function App() {
 
         <div name="galleries" class="uk-flex uk-section-secondary uk-text-center" style={{display:"inline-block", backgroundColor: "#0f1727", width: "100vw", backgroundImage: "linear-gradient(to top, #0f1727, #0f1727, #0f1727)"}}>
           <h1 class="uk-text-center" style={{textAlign: "center", marginTop: 0}} uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false">Night Sky Photography</h1>
-          <div uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false" style={{fontSize: isSmallScreen ? "14px" : "16px", marginTop:"8px", marginBottom: "32px", width: "60vw", display: "inline-block"}} class="uk-text-center">
-          As part of an independent research project I took a part of during the Summer of 2020, I learned how to take night sky photographs. I fell in love with the process of it and ever since have done it as a hobby.
-          Here you can see some of my best work as of now. All of these were taken using a digital single-lens reflex camera and were all edited in Adobe Lightroom and Photoshop. Keep an eye out because I intend to do even more night sky photography in the future!
+          <div uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false" style={{fontSize: isSmallScreen ?ith the process of it and ever since have done it as a hobby.
+          Here you can see some of my best work as of now. All of these were taken using a digital single-lens reflex camera and were all edited in Adobe Lightroom and Photoshop. Keep an eye out because I intend to do even more night sky photography in the future! "14px" : "16px", marginTop:"8px", marginBottom: "32px", width: "60vw", display: "inline-block"}} class="uk-text-center">
+          As part of an independent research project I took a part of during the Summer of 2020, I learned how to take night sky photographs. I fell in love w
           </div>
           <div style={{paddingLeft: 128, paddingRight: 128 , paddingTop: 8, paddingBottom: 16}} uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false">
             <NightSky/>
