@@ -27,6 +27,18 @@ function App() {
   const [isScrolled, setIsScrolled] = useState(false);
   const windowSize = useRef([window.innerWidth, window.innerHeight]);
 
+  const items = [
+    { title: "Understanding U.S. Racial Segregation Through Persistent Homology (in preparation)",
+      authors:"O. Friesen, L. Ziegelmeier",
+      description: (<>arXiv preprint.{" "}<a href="https://arxiv.org/abs/2410.10886" target="_blank" rel="noopener noreferrer" style={{ color: "#de1b85", textDecoration: "underline" }}>https://arxiv.org/abs/2410.10886</a></>) },
+    { title: "A Cospectral Construction for the Generalized Distance Matrix",
+      authors:"O. Friesen, C. Kolko, N. Layman, K. Lorenzen, S. Zaske, and A. Ziegler",
+      description: (<>Special Matrices, vol. 13, no. 1, 2025, pp. 20250037.{" "}<a href="https://doi.org/10.1515/spma-2025-0037" target="_blank" rel="noopener noreferrer" style={{ color: "#de1b85", textDecoration: "underline" }}>https://doi.org/10.1515/spma-2025-0037</a></>) },
+      { title: "On the Hölder Continuity of the Brascamp-Lieb Constant (Undergraduate Thesis)",
+      authors:"O. Friesen",
+      description: (<>Mathematics, Statistics, and Computer Science Honors Projects. 98.{" "}<a href="https://digitalcommons.macalester.edu/mathcs_honors/98" target="_blank" rel="noopener noreferrer" style={{ color: "#de1b85", textDecoration: "underline" }}>https://digitalcommons.macalester.edu/mathcs_honors/98</a></>) },
+  ];
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
@@ -83,7 +95,7 @@ function App() {
     });
 
     const subtyped = new Typed(el2.current, {
-      strings: ['^1000I\'m a mathematician', '^200I\'m a cartographer', '^200I\'m a mobile app developer', '^200I\'m a web program developer', '^200I\'m a night sky photographer', '^200I\'m a CAD technician', '^200I\'m a 3d renderer', ''],
+      strings: ['^1000I\'m a mathematician', '^200I\'m a cartographer', '^200I\'m a web program developer', '^200I\'m a night sky photographer', ''],
       startDelay: 2700,
       backDelay: 500,
       backSpeed: 75,
@@ -152,6 +164,26 @@ function App() {
             </div>
           </div>
 
+          <h2 class="uk-text-center" style={{ textAlign: "center", paddingTop: 32, marginBottom: 32 }}>Papers and Preprints</h2>
+
+          <div 
+            uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false" 
+            style={{ fontSize: isSmallScreen ? "14px" : "16px", marginTop:"8px", marginBottom: "32px", width: "60vw", display: "inline-block" }} 
+            class="uk-text-left"
+          >
+
+            <ol className="styled-list" style={{ counterReset: `list-counter ${items.length+1}` }}>
+              {items.map((item, i) => (
+                <li key={i}>
+                  <span>{item.title}</span>
+                  <span>{item.authors}</span>
+                  <span>{item.description}</span>
+                </li>
+              ))}
+            </ol>
+          </div>
+
+
           <h3 style={{marginTop: 64}} class="uk-text-center">Want to know more about me?</h3>
 
             <div class="uk-flex uk-flex-center" style={{width: "100%", marginTop: 16, marginBottom: 32}}>
@@ -161,7 +193,7 @@ function App() {
         </div>
         <div name="projects" style={{backgroundColor: "#0f1727"}}>
           <div class="uk-flex uk-section-secondary uk-text-center" style={{display:"inline-block", backgroundImage: "linear-gradient(180deg, #0f1727, #05040D , #05040D , #05040D , #05040D , #0f1727)", width: "100vw", borderRadius: 48}}>
-            <h1 class="uk-text-center" style={{textAlign: "center", marginTop: 128}} uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false">My Projects</h1>
+            <h1 class="uk-text-center" style={{textAlign: "center", marginTop: 128}} uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false">Other (non-math) Projects</h1>
             <div uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false" style={{fontSize: isSmallScreen ? "14px" : "16px", marginTop:"8px", marginBottom: "32px", width: "60vw", display: "inline-block"}} class="uk-text-center">
                 Below is a list of projects that I have worked on since high school. Some of the following projects were done for courses and some were done independently. As I am on the constant pursuit of creating new things, what you see here now might not be the same tomorrow!
             </div>

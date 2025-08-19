@@ -55,38 +55,30 @@ class Ori {
             "Adobe XD" : "3 years", "Adobe Photoshop" : "1 year", "Adobe Lightroom" : "3 years",
             "Unity" : "2 years", "ArcGIS Pro" : "3 years"}
     }
-};` : `/* Hello! I'm Ori Friesen. I'm a designer, inventor, developer, and night sky photographer.
-Every project I’ve taken on was guided by my curiosity, creativity, and diligence. I use
-this space to showcase my current and past work, to detail upcoming plans, and to make my
-presence felt in the world. Here I present my many projects from my night sky photographs
-to my engineering projects to showcasing a gallery of all my best computer-generated renders.
-I’m constantly changing and evolving, so what you see here today might not be here tomorrow! */
+};` : `/* Hello! I'm Ori Friesen. I'm currently a Theoretical Mathematics Ph.D. student at The Ohio State
+University. While math encompasses much of my life, my interests are vast. This space serves to archive
+my mathematical work, showcase current and past projects, detail upcoming plans, and make my presence felt
+in the digital world. Here I present my many projects from research papers to night sky photographs to my
+engineering projects to showcasing a gallery of all my best computer-generated renders. I’m constantly
+changing and evolving, so what you see here today might not be here tomorrow! */
 
 class Ori {
     constructor() {
         this.origin = 
             "Portland, OR"
         this.education = 
-            "Macalester College"
-        this.academicSpecialties = 
+            ["Macalester College", "Ohio State University"]
+        this.academicInterests = 
             ["mathematics", "geography", "computer science"]
-        this.expectedGraduation = 
-            "May 2025"
         this.interests = 
-            ["topology", "graph theory", "urban planning", "app development",
-            "algorithm development", "mechanical engineering", "night sky photography",
-            "3d rendering", "music production", "labradoodles"]
-        this.languageExperience = 
-            {"C++" : "6 years", "C#" : "3 years", "Java" : "6 years", "Flutter/Dart" : "1 year",
-            "Python" : "4 years", "React.js" : "2 years", "javaScript" : "2 years",
-            "HTML" : "2 years", "CSS" : "2 years", "D3.js" : "1 year", "LaTeX" : "7 years",
-            "R" : "3 years"}
+            ["functional and harmonic analysis", "topological data analysis", "graph theory",
+            "urban planning", "app development", "algorithm development", "mechanical engineering",
+            "night sky photography", "3d rendering", "music production", "Portland Trailblazers",
+            "labradoodles"]
         this.skills = 
-            {"Android Studio" : "4 years", "Autodesk Fusion 360" : "4 years",
-            "Autodesk Inventor" : "4 years", "SolidWorks" : "3 years",
-            "OnShape" : "3 years", "3D-Printing" : "6 years",
-            "Adobe XD" : "3 years", "Adobe Photoshop" : "1 year", "Adobe Lightroom" : "3 years",
-            "Unity" : "2 years", "ArcGIS Pro" : "3 years"}
+            ["Android Studio", "Autodesk Fusion 360", "Autodesk Inventor", "SolidWorks",
+            "OnShape", "3D-Printing", "Adobe XD", "Adobe Photoshop", "Adobe Lightroom",
+            "Unity", "ArcGIS Pro", "Adobe Illustrator"]
     }
 };`}
                 </code>

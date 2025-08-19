@@ -85,7 +85,7 @@ export const ContactButtons = () => {
                 <span style={{fontSize: 16, marginLeft: 16}}>GitHub</span>
             </div>
         </div>
-        <div class="socialButton four" onClick={handleOpenGrabcad}>
+        {/* <div class="socialButton four" onClick={handleOpenGrabcad}>
             <div class="buttonInner">
                 <img src={grabcad} style={{height:32, filter: "brightness(0) invert(1)"}}/>
                 <span style={{fontSize: 16, marginLeft: 16}}>GrabCAD</span>
@@ -109,7 +109,7 @@ export const ContactButtons = () => {
                 <img src={soundcloud} style={{height:32, filter: "brightness(0) invert(1)"}}/>
                 <span style={{fontSize: 16, marginLeft: 16}}>SoundCloud</span>
             </div>
-        </div>
+        </div> */}
         <div class="socialButton eight" onClick={handleOpenGoodreads}>
             <div class="buttonInner">
                 <img src={goodreads} style={{height:32, filter: "brightness(0) invert(1)"}}/>

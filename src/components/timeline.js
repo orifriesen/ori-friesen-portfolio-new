@@ -13,27 +13,34 @@ const WorkTimeline = () => {
     const isSmallScreen = useMediaQuery({ maxWidth: 600 });
 
     return (
-        <Timeline className="custom-timeline" align={'alternate'} isItemActive={index => index === 1}>
+        <Timeline className="custom-timeline" align={'alternate'} isItemActive={index => index === 0}>
             <Timeline.Item uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: false">
-                <p>Expected May 2025</p>
-                <div style={{color:"#de1b85", fontSize: isSmallScreen ? "18px" : "24px", lineHeight: 1,fontWeight: 550}}>B.A. in Mathematics, B.A. in Geography, Minor in Computer Science</div>
-                <div style={{color:"white", fontSize: isSmallScreen ? "12px" : "18px", marginTop:"4px", marginBottom: "4px"}}>Macalester College</div>
+                <p>August 2025 - Present</p>
+                <div style={{color:"#de1b85", fontSize: isSmallScreen ? "18px" : "24px", lineHeight: 1,fontWeight: 550}}>Ph.D. in Theoretical Mathematics</div>
+                <div style={{color:"white", fontSize: isSmallScreen ? "12px" : "18px", marginTop:"4px", marginBottom: "4px"}}>The Ohio State University</div>
                 <div style={{fontSize: isSmallScreen ? "12px" : "14px", marginTop:"8px"}}>
                     <ul class="uk-list">
-                        <li>Relevant Coursework:</li>
-                        <li>Mathematics: MATH 236 Linear Algebra, MATH 376 Algebraic Structures, MATH 375 Graph Theory, MATH 471 Topology, MATH 377 Real Analysis, MATH 365 Computational Linear Algebra,
-                            MATH 477 Projects in Analysis
-                        </li>
-                        <li>Computer Science: COMP 128 Data Structures, COMP 225 Software Design & Development, COMP 221 Algorithm Design & Analysis, COMP 435 Data Visualization</li>
-                        <li>Geography: GEOG 225 Intro to GIS, GEOG 362 Remote Sensing of Environment</li>
+                        Currently working towards obtaining my Ph.D. in Mathematics. My interests include functional and harmonic anaylsis.
                     </ul>
 
                 </div>
             </Timeline.Item>
             <Timeline.Item uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: false">
-                <p>September 2023 - Present</p>
+                <p>May 2025</p>
+                <div style={{color:"#de1b85", fontSize: isSmallScreen ? "18px" : "24px", lineHeight: 1,fontWeight: 550}}>B.A. in Mathematics, Minor in Computer Science, Minor in Geospatial Science</div>
+                <div style={{color:"white", fontSize: isSmallScreen ? "12px" : "18px", marginTop:"4px", marginBottom: "4px"}}>Macalester College</div>
+                <div style={{fontSize: isSmallScreen ? "12px" : "14px", marginTop:"8px"}}>
+                    <ul class="uk-list">
+                        <li>Thesis Title: "On the Holder Continuity of the Brascamp-Lieb Constant"</li>
+                        <li>Recognitions: Summa Cum Laude, Camp Endowed Prize in Mathematics, Gateway Prize for Excellent Writing - Natural Sciences Division</li>
+                    </ul>
+
+                </div>
+            </Timeline.Item>
+            <Timeline.Item uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: false">
+                <p>September 2023 - May 2025</p>
                 <div style={{color:"#de1b85", fontSize: isSmallScreen ? "18px" : "24px", lineHeight: 1,fontWeight: 550}}>Mathematics Preceptor and Grader</div>
-                <div style={{color:"white", fontSize: isSmallScreen ? "12px" : "18px", marginTop:"4px", marginBottom: "4px"}}>Linear Algebra, Algebraic Structures</div>
+                <div style={{color:"white", fontSize: isSmallScreen ? "12px" : "18px", marginTop:"4px", marginBottom: "4px"}}>Linear Algebra, Algebraic Structures, Graph Theory, Topology</div>
                 <span class="uk-label uk-label-success" style={{fontSize: isSmallScreen ? "10px" : "14px", backgroundColor: "PaleTurquoise", marginRight: 8, color: "#050409", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>R and RStudio</span>
                 <span class="uk-label" style={{fontSize: isSmallScreen ? "10px" : "14px", backgroundColor: "PaleGreen", color: "#050409", marginRight: 8, fontVariantCaps:"normal", textTransform: "none", borderRadius: 16, paddingBottom: 1}}>Teaching</span>
                 <span class="uk-label uk-label-success" style={{fontSize: isSmallScreen ? "10px" : "14px", backgroundColor: "palegreen", color: "#050409", marginRight: 8, textTransform: "none", borderRadius: 16, paddingBottom: 1}}>Communication</span>

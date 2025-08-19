@@ -280,3 +280,50 @@ input {
   background-color: #e9e5cd;
   border: 2px solid #e9e5cd;
 }
+
+.styled-list {
+  list-style: none;
+  counter-reset: list-counter; /* we'll set start in JSX dynamically */
+  padding-left: 3.5em;
+  margin: 0;
+  font-size: clamp(14px, 2vw, 18px); /* responsive scaling */
+}
+
+.styled-list li {
+  position: relative;
+  counter-increment: list-counter -1; /* reversed countdown */
+  margin-bottom: 1rem;
+  padding-left: 2.5em;
+  line-height: 1.5;
+}
+
+.styled-list li::before {
+  content: counter(list-counter) ":";
+  position: absolute;
+  left: 0;
+  top: 15%;
+  transform: translateY(-50%);
+  font-weight: 700;
+  font-size: clamp(16px, 3vw, 24px); /* scales numbers with screen */
+  color: #de1b85;
+}
+
+.styled-list li span:first-child {
+  font-size: clamp(14px, 2vw, 20px); /* title scales */
+  font-weight: 600;
+  font-style: italic
+}
+
+.styled-list li span:nth-child(2) {
+  display: block;
+  font-style: normal; /* description */
+  font-size: clamp(12px, 1.8vw, 16px); /* description scales */
+  margin-top: 0.2em;
+}
+
+.styled-list li span:last-child {
+  display: block;
+  font-style: normal; /* description */
+  font-size: clamp(12px, 1.8vw, 16px); /* description scales */
+  margin-top: 0.2em;
+}
